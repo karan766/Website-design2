@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+   
+}
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+#purple{
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background-color: #EDBFFF;
+    z-index: 300;
+    opacity: 0;
+    display: none;
+
+}
+
+
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 9;
+    mix-blend-mode: difference;
+    transition: background-image ease 0.5s;
+    mix-blend-mode:difference;
+    background-position: center;
+    background-size: cover;
+   
+}
+.main{
+    background-color: #0F0D0D;
+    cursor: none;
+}
+
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 20;
+    padding-top: 12vw;
+    
+}
+#nav{
+ height: 55px;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0px 30px;
+ position: fixed;
+ mix-blend-mode: difference;
+ z-index: 500;
+}
+#nav img{
+    height: 26px;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+#nav #circle{
+    height:20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+#nav h4{
+    font-size: 14px;
+    font-weight: 300;
+}
+#nav h4:nth-child(1){
+    border-bottom: 1.5px solid #fff;
+}
+.page1 h1{
+    font-size: 8vw;
+    font-family: Suisse Intl;
+    font-weight: 300;
+    
+    margin-left:6vw;
+}
+.page1 h2{
+    font-size: 8vw;
+    font-weight: 300;
+    font-family:Suisse Intl;
+    margin-left: 26vw;
+}
+
+.page1 video{
+   width: 60%;
+   margin-top: 5%;
+   position: relative;
+   left:50%;
+   transform: translate(-50%,0);
+}
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    padding: 100px 5vw;
+    border-bottom: 2px solid #605757 ;
+    position: relative;
+    z-index: 20;
+    
+   
+}
+.page2 h1{
+    font-size: 7vw;
+    color: #111;
+    font-family:Suisse Intl;
+    font-weight: 300;
+}
+.page2-container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+.page2-left{
+   
+    width: 38%;
+}
+.page2-right{
+   
+    width: 24%;
+}
+.page2-left h3{
+    font-size: 3.9vw;
+    font-weight: 100;
+    margin-top: 9%;
+    color: #111;
+ 
+
+}
+.page2-right p{
+ font-size: 1.35vw;
+ color: #111;
+ margin-top: 16%;
+}
+
+.page2-right button{
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 0;
+    background-color: #EDBFFF;
+    color: black;
+    margin-top:20px ;
+}
+.page3{
+    min-height: 260vh;
+    width: 100%;
+    position: relative;
+    padding-top: 5%;
+    padding: 2vw 6vw;
+    border-bottom: 2px solid #605757 ;
+    z-index: 20;
+    
+}
+.page3 h1{
+    font-size:6.8vw ;
+    font-weight: 100;
+    color:black ;
+    margin-left: 3%;
+}
+.page3-part1{
+    display: flex ;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.page3-part1 img{
+    height: 29rem;
+    margin-top: 18vh;
+}
+.page3-part1 h3{
+    color: black;
+}
+.page3-part1 h5{
+    color: black;
+    font-weight: 100;
+}
+.page3-part1 video{
+    height: 27rem;
+}
+.page3-part2{
+    display: flex ;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.page3-part2 img{
+    height: 38rem;
+    margin-top: 50vh;
+}
+.page3-part2 video{
+    height: 29rem;
+    margin-top: 10vh;
+}
+.page3-part2 h3{
+    color: black;
+}
+.page3-part2 h5{
+    color: black;
+    font-weight: 100;
+}
+.page4{
+    min-height: 130vh;
+    width: 100%;
+    position: relative;
+    z-index: 20;
+    padding: 100px;
+    margin-top: 15vh;
+    border-bottom: 2px solid white ;
+    
+}
+
+.elem{
+    
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+   
+}
+.elem img{
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+    height: 400px;
+    width: 400px;
+}
+.elem img:nth-child(1){
+    left: 2%;
+}
+.elem img:nth-child(3){
+    right: 4%;
+    top: 40%;
+}
+.text-div{
+    height: 19vh;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+}
+.elem h1{
+    font-size: 7vw;
+    font-weight: 400;
+    transition: all ease-out 0.5s;
+    
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+   
+}
+.elem:hover img{
+    opacity: 100%;
+    transform: translateY(0%) rotate(0deg);
+}
+
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 20;
+    padding: 140px 100px;
+}
+.page5 h2{
+    font-size:4vw ;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 50px;
+
+}
+.box{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+    border-top: 2px solid #dadada;
+
+}
+ .box.last-box{
+    border-bottom: 2px solid #dadada;
+}
+.box .data-image{
+    z-index: 30;
+}
+.box img{
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    opacity: 0;
+    transition: all ease-in 0.5s;
+   
+    margin-left: 30%;
+}
+.box:hover img{
+    opacity: 100%;
+   
+   
+}
+
+
+#footer {
+    height: 137vh;
+    width: 100%;
+    background-color: #EDBFFF;
+   padding-top: 30vh;
+   padding-left: 100px;
+   padding-right: 100px;
+   
+}
+.footer-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-top h1{
+    color: #111;
+    font-size: 9vw;
+    font-weight: 300;
+}
+.footer-circle{
+    border: 1px solid ;
+    border-radius: 50%;
+    height: 23.8vh;
+    width: 23.8vh;
+   background-color: white;
+   display: flex;
+   align-items: center;
+    
+}
+.footer-circle h5{
+    color: black;
+  padding-left: 4.5vh;
+  font-weight: 300;
+}
+#footer h4{
+    padding-top: 150px;
+    color: black;
+    font-weight: 400;
+}
+#footer  p{
+    
+    position: absolute;
+    color: black;
+    bottom: 0;
+    padding-bottom: 300px;
+}
